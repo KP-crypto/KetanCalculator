@@ -6,3 +6,9 @@ def test_add():
 
 def test_substract():
     assert 6 == calculator.subtract(10,4)
+
+def test_multiplication():
+    assert 9 == calculator.multiply(3,3)
+
+def test_divide():
+    assert 2 == calculator.devide(10,5)
