@@ -16,3 +16,11 @@ def test_divide():
 def test_list():
     list=[1,2,3,4,5]
     assert 6 == calculator.Append_list(list)
+
+def test_reverse_string():
+    s='ketan'
+    rev=calculator.reverse_string(s)
+    if rev == 'natek':
+        assert True
+    else:
+        assert False

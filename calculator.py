@@ -14,3 +14,9 @@ def Append_list(list):
     list=[1,2,3,4,5]
     list.append(10)
     return len(list)
+
+def reverse_string(string):
+    return string[::-1]
+
+
+
