@@ -1,3 +1,5 @@
+import requests
+
 def add(first_num,second_num):
     return first_num + second_num
 
@@ -19,4 +21,7 @@ def reverse_string(string):
     return string[::-1]
 
 
-
+def url_status_code():
+    url='https://www.google.com/'
+    response=requests.get(url)
+    return response.status_code

@@ -24,3 +24,7 @@ def test_reverse_string():
         assert True
     else:
         assert False
+
+def test_status_code():
+    response=calculator.url_status_code()
+    assert 200 == response
