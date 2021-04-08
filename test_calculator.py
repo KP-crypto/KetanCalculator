@@ -28,3 +28,7 @@ def test_reverse_string():
 def test_status_code():
     response=calculator.url_status_code()
     assert 200 == response
+
+def test_uppercase_string():
+    s=calculator.string_uppercase('ketan')
+    assert 'KETAN' == s
