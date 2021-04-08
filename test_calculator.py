@@ -12,3 +12,7 @@ def test_multiplication():
 
 def test_divide():
     assert 2 == calculator.devide(10,5)
+
+def test_list():
+    list=[1,2,3,4,5]
+    assert 6 == calculator.Append_list(list)
