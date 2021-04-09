@@ -1,7 +1,5 @@
 import requests
 
-
-
 def add(first_num,second_num):
     return first_num + second_num
 
@@ -22,14 +20,18 @@ def Append_list(list):
 def reverse_string(string):
     return string[::-1]
 
-
 def url_status_code():
     url='https://www.google.com/'
     response=requests.get(url)
     return response.status_code
 
-
 def string_uppercase(s):
     s=s.upper()
     return s
 
+def remove_duplicate(string):
+    unique=''
+    for i in string:
+        if i not in unique:
+            unique=unique + i
+    return unique

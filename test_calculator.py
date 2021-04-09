@@ -32,3 +32,8 @@ def test_status_code():
 def test_uppercase_string():
     s=calculator.string_uppercase('ketan')
     assert 'KETAN' == s
+
+def test_remove_duplicate():
+    expected_string='Ketan'
+    actual_string=calculator.remove_duplicate('Keetan')
+    assert actual_string == expected_string
