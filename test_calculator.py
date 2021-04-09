@@ -33,6 +33,7 @@ def test_uppercase_string():
     s=calculator.string_uppercase('ketan')
     assert 'KETAN' == s
 
+@pytest.mark.repeat(3)
 def test_remove_duplicate():
     expected_string='Ketan'
     actual_string=calculator.remove_duplicate('Keetan')
