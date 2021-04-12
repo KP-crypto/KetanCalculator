@@ -26,12 +26,23 @@ def url_status_code():
     return response.status_code
 
 def string_uppercase(s):
-    s=s.upper()
+    s = s.upper()
     return s
 
+
 def remove_duplicate(string):
-    unique=''
+    unique = ''
     for i in string:
         if i not in unique:
-            unique=unique + i
+            unique = unique + i
     return unique
+
+
+def longest_prifiex():
+    l = ['car', 'carbon', 'cardiode']
+    result = ''
+    l.sort()
+    for i in range(len(l[0])):
+        if l[0][i] == l[-1][i]:
+            result = result + l[0][i]
+    return result

@@ -25,16 +25,26 @@ def test_reverse_string():
     else:
         assert False
 
+
+# @pytest.mark.depends(on=['test_uppercase_string'])
 def test_status_code():
     response=calculator.url_status_code()
     assert 200 == response
 
+
+# @pytest.mark.skip
 def test_uppercase_string():
-    s=calculator.string_uppercase('ketan')
+    s = calculator.string_uppercase('ketan')
     assert 'KETAN' == s
+
 
 @pytest.mark.repeat(3)
 def test_remove_duplicate():
-    expected_string='Ketan'
-    actual_string=calculator.remove_duplicate('Keetan')
+    expected_string = 'Ketan'
+    actual_string = calculator.remove_duplicate('Keetan')
     assert actual_string == expected_string
+
+
+def test_longest_prefix():
+    result = calculator.longest_prifiex()
+    assert 'car' == result
