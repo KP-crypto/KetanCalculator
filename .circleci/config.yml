@@ -17,13 +17,13 @@ jobs:
 
 workflows:
   main:
-    triggers:
-      filters:
-        tags:
-          only:
-            - master
-
-
-
     jobs:
       - build-and-test
+        filters:
+          branches:
+            only:
+              - master
+
+
+
+
