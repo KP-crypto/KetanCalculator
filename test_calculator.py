@@ -48,3 +48,12 @@ def test_remove_duplicate():
 def test_longest_prefix():
     result = calculator.longest_prifiex()
     assert 'car' == result
+
+
+def test_second_largest_element():
+    l = [11, 34, 55, 100, 87]
+    result = calculator.second_largest_elelemt(l)
+    if result == 87:
+        assert True
+    else:
+        assert False
