@@ -17,5 +17,11 @@ jobs:
 
 workflows:
   main:
+    triggers:
+      filters:
+        branches:
+          only:
+            - main
+
     jobs:
       - build-and-test
