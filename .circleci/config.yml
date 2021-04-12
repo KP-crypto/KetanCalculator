@@ -19,9 +19,11 @@ workflows:
   main:
     triggers:
       filters:
-        branches:
+        tags:
           only:
-            - main
+            - master
+
+
 
     jobs:
       - build-and-test
