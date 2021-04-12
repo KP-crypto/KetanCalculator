@@ -16,9 +16,11 @@ jobs:
           name: Test
 
 workflows:
-  main:
-    jobs:
-      - build-and-test
-      filters:
-          branches:
-            only: master
+  version: 2
+    build:
+      jobs:
+        - test:
+            filters:
+              branches:
+                only:
+                  - master
