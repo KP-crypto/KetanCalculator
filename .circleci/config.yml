@@ -17,12 +17,6 @@ jobs:
 
 workflows:
   main:
-    filters:
-      branches:
-       only:
-        - master
-        - beta
-    
     jobs:
       - build-and-test
       
