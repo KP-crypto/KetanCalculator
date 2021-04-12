@@ -16,13 +16,14 @@ jobs:
           name: Test
 
 workflows:
-   version: 2
-   nightly:
-     triggers:
-           filters:
-             branches:
-               only:
-                 - master
-                
-   jobs:
-     - test
+  main:
+    filters:
+      branches:
+       only:
+        - master
+        - beta
+    
+    jobs:
+      - build-and-test
+      
+
