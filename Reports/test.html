@@ -241,43 +241,76 @@ function filter_table(elem) {
     var not_found_message = document.getElementById("not-found-message");
     not_found_message.hidden = !all_rows_hidden;
 }
-</script>
+
+    </script>
     <h1>test.html</h1>
-    <p>Report generated on 09-Apr-2021 at 20:01:08 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v2.1.1</p>
+    <p>Report generated on 12-Apr-2021 at 16:45:27 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v2.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
-      <tr>
-        <td>JAVA_HOME</td>
-        <td>C:\Program Files\Java</td></tr>
-      <tr>
-        <td>Packages</td>
-        <td>{"pluggy": "0.13.1", "py": "1.9.0", "pytest": "6.0.1"}</td></tr>
-      <tr>
-        <td>Platform</td>
-        <td>Windows-10-10.0.18362-SP0</td></tr>
-      <tr>
-        <td>Plugins</td>
-        <td>{"forked": "1.3.0", "html": "2.1.1", "metadata": "1.10.0", "ordering": "0.6", "repeat": "0.8.0", "rerunfailures": "9.1.1", "xdist": "2.1.0"}</td></tr>
-      <tr>
-        <td>Python</td>
-        <td>3.8.5</td></tr></table>
+        <tr>
+            <td>JAVA_HOME</td>
+            <td>C:\Program Files\Java</td>
+        </tr>
+        <tr>
+            <td>Packages</td>
+            <td>{"pluggy": "0.13.1", "py": "1.9.0", "pytest": "6.0.1"}</td>
+        </tr>
+        <tr>
+            <td>Platform</td>
+            <td>Windows-10-10.0.18362-SP0</td>
+        </tr>
+        <tr>
+            <td>Plugins</td>
+            <td>{"depends": "1.0.1", "forked": "1.3.0", "html": "2.1.1", "metadata": "1.10.0", "ordering": "0.6",
+                "repeat": "0.8.0", "rerunfailures": "9.1.1", "xdist": "2.1.0"}
+            </td>
+        </tr>
+        <tr>
+            <td>Python</td>
+            <td>3.8.5</td>
+        </tr>
+    </table>
     <h2>Summary</h2>
-    <p>9 tests ran in 0.84 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="passed">9 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>, <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
+    <p>13 tests ran in 5.66 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter"
+                                                                                         data-test-result="passed"
+                                                                                         hidden="true"
+                                                                                         name="filter_checkbox"
+                                                                                         onChange="filter_table(this)"
+                                                                                         type="checkbox"/><span
+            class="passed">13 passed</span>, <input checked="true" class="filter" data-test-result="skipped"
+                                                    disabled="true" hidden="true" name="filter_checkbox"
+                                                    onChange="filter_table(this)" type="checkbox"/><span
+            class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed"
+                                                     disabled="true" hidden="true" name="filter_checkbox"
+                                                     onChange="filter_table(this)" type="checkbox"/><span
+            class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error"
+                                                   disabled="true" hidden="true" name="filter_checkbox"
+                                                   onChange="filter_table(this)" type="checkbox"/><span class="error">0 errors</span>,
+    <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox"
+           onChange="filter_table(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input
+            checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true"
+            name="filter_checkbox" onChange="filter_table(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>,
+    <input checked="true" class="filter" data-test-result="rerun" disabled="true" hidden="true" name="filter_checkbox"
+           onChange="filter_table(this)" type="checkbox"/><span class="rerun">0 rerun</span>
     <h2>Results</h2>
     <table id="results-table">
-      <thead id="results-table-head">
+        <thead id="results-table-head">
         <tr>
-          <th class="sortable result initial-sort" col="result">Result</th>
-          <th class="sortable" col="name">Test</th>
-          <th class="sortable numeric" col="duration">Duration</th>
-          <th>Links</th></tr>
+            <th class="sortable result initial-sort" col="result">Result</th>
+            <th class="sortable" col="name">Test</th>
+            <th class="sortable numeric" col="duration">Duration</th>
+            <th>Links</th>
+        </tr>
         <tr hidden="true" id="not-found-message">
-          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+            <th colspan="4">No results found. Try to check the filters</th>
+        </tr>
+        </thead>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_calculator.py::test_add</td>
+            <td class="col-name">test_calculator.py::test_second_largest_element</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
@@ -286,7 +319,7 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_calculator.py::test_substract</td>
+            <td class="col-name">test_calculator.py::test_longest_prefix</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
@@ -295,7 +328,7 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_calculator.py::test_multiplication</td>
+            <td class="col-name">test_calculator.py::test_remove_duplicate[3-3]</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
@@ -304,7 +337,7 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_calculator.py::test_divide</td>
+            <td class="col-name">test_calculator.py::test_remove_duplicate[2-3]</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
@@ -313,45 +346,116 @@ function filter_table(elem) {
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">test_calculator.py::test_list</td>
+            <td class="col-name">test_calculator.py::test_remove_duplicate[1-3]</td>
           <td class="col-duration">0.00</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
             <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_calculator.py::test_reverse_string</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_calculator.py::test_status_code</td>
-          <td class="col-duration">0.57</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
+      <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">test_calculator.py::test_uppercase_string</td>
           <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
-        <tr>
+          <td class="col-links"></td>
+      </tr>
+      <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
+              <div class="empty log">No log output captured.</div>
+          </td>
+      </tr>
+      </tbody>
+        <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">test_calculator.py::test_remove_duplicate</td>
-          <td class="col-duration">0.00</td>
-          <td class="col-links"></td></tr>
+            <td class="col-result">Passed</td>
+            <td class="col-name">test_calculator.py::test_status_code</td>
+            <td class="col-duration">2.03</td>
+            <td class="col-links"></td>
+        </tr>
         <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <td class="extra" colspan="4">
+                <div class="empty log">No log output captured.</div>
+            </td>
+        </tr>
+        </tbody>
+        <tbody class="passed results-table-row">
+        <tr>
+            <td class="col-result">Passed</td>
+            <td class="col-name">test_calculator.py::test_reverse_string</td>
+            <td class="col-duration">0.00</td>
+            <td class="col-links"></td>
+        </tr>
+        <tr>
+            <td class="extra" colspan="4">
+                <div class="empty log">No log output captured.</div>
+            </td>
+        </tr>
+        </tbody>
+        <tbody class="passed results-table-row">
+        <tr>
+            <td class="col-result">Passed</td>
+            <td class="col-name">test_calculator.py::test_list</td>
+            <td class="col-duration">0.00</td>
+            <td class="col-links"></td>
+        </tr>
+        <tr>
+            <td class="extra" colspan="4">
+                <div class="empty log">No log output captured.</div>
+            </td>
+        </tr>
+        </tbody>
+        <tbody class="passed results-table-row">
+        <tr>
+            <td class="col-result">Passed</td>
+            <td class="col-name">test_calculator.py::test_divide</td>
+            <td class="col-duration">0.00</td>
+            <td class="col-links"></td>
+        </tr>
+        <tr>
+            <td class="extra" colspan="4">
+                <div class="empty log">No log output captured.</div>
+            </td>
+        </tr>
+        </tbody>
+        <tbody class="passed results-table-row">
+        <tr>
+            <td class="col-result">Passed</td>
+            <td class="col-name">test_calculator.py::test_multiplication</td>
+            <td class="col-duration">0.00</td>
+            <td class="col-links"></td>
+        </tr>
+        <tr>
+            <td class="extra" colspan="4">
+                <div class="empty log">No log output captured.</div>
+            </td>
+        </tr>
+        </tbody>
+        <tbody class="passed results-table-row">
+        <tr>
+            <td class="col-result">Passed</td>
+            <td class="col-name">test_calculator.py::test_substract</td>
+            <td class="col-duration">0.00</td>
+            <td class="col-links"></td>
+        </tr>
+        <tr>
+            <td class="extra" colspan="4">
+                <div class="empty log">No log output captured.</div>
+            </td>
+        </tr>
+        </tbody>
+        <tbody class="passed results-table-row">
+        <tr>
+            <td class="col-result">Passed</td>
+            <td class="col-name">test_calculator.py::test_add</td>
+            <td class="col-duration">0.00</td>
+            <td class="col-links"></td>
+        </tr>
+        <tr>
+            <td class="extra" colspan="4">
+                <div class="empty log">No log output captured.</div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+  </body>
+</html>

@@ -1,4 +1,5 @@
 import requests
+import sys
 
 def add(first_num,second_num):
     return first_num + second_num
@@ -46,3 +47,15 @@ def longest_prifiex():
         if l[0][i] == l[-1][i]:
             result = result + l[0][i]
     return result
+
+
+def second_largest_elelemt(l):
+    first = l[0]
+    second = -sys.maxsize
+    for i in range(len(l)):
+        if l[i] > first:
+            second = first
+            first = l[i]
+        elif l[i] > second:
+            second = l[i]
+    return second
