@@ -57,3 +57,8 @@ def test_second_largest_element():
         assert True
     else:
         assert False
+
+
+def test_parenthesis():
+    result = calculator.parenthesis("())")
+    assert result == 1
