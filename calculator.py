@@ -59,3 +59,18 @@ def second_largest_elelemt(l):
         elif l[i] > second:
             second = l[i]
     return second
+
+
+def parenthesis(s):
+    bal = 0
+    ans = 0
+    for i in range(len(s)):
+        if s[i] == '(':
+            bal = bal + 1
+        else:
+            bal = bal - 1
+
+        if bal == -1:
+            bal = bal + 1
+            ans = ans + 1
+    return bal + ans
