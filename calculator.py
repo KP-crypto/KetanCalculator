@@ -32,11 +32,11 @@ def string_uppercase(s):
 
 
 def remove_duplicate(string):
-    unique = ''
+    original = ''
     for i in string:
         if i not in unique:
-            unique = unique + i
-    return unique
+            original = original + i
+    return original
 
 
 def longest_prifiex():
