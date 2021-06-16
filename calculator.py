@@ -34,7 +34,7 @@ def string_uppercase(s):
 def remove_duplicate(string):
     original = ''
     for i in string:
-        if i not in unique:
+        if i not in original:
             original = original + i
     return original
 
